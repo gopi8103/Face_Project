@@ -60,6 +60,12 @@ public class TestNg extends Base {
 			 driver=OpenEdgeBrowser();
 			 
 		}
+		if(browserName.equals("safari"))
+		{
+			 driver=OpenEdgeBrowser();
+			 
+		}
+		
 		
 		/*if(browserName.equals("Firefox"))
 		{
