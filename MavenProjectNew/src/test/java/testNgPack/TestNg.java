@@ -59,9 +59,7 @@ public class TestNg extends Base {
 		{
 			 driver=OpenEdgeBrowser();
 			 
-		}
-		
-		
+	}
 		/*if(browserName.equals("Firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver","C:\\Users\\gopik\\Downloads\\selenium\\geckodriver-v0.32.2-win32\\geckodriver.exe");
