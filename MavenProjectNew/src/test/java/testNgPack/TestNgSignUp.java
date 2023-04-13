@@ -67,6 +67,18 @@ public class TestNgSignUp extends Base{
 			 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	
 		}
 	@BeforeClass
+	public void CreatePOMObject046565() {
+		System.out.println("Before Class");
+		//System.setProperty("webdriver.chrome.driver","C:\\Users\\gopik\\Downloads\\selenium\\chromedriver_win32 (1)\\chromedriver.exe");
+		//driver=new ChromeDriver();
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	    loginpage=new Loginpage(driver);
+		signUpPopUP=new SignUpPopUP(driver);
+		
+		
+		
+	}
+	@BeforeClass
 	public void CreatePOMObject() {
 		System.out.println("Before Class");
 		//System.setProperty("webdriver.chrome.driver","C:\\Users\\gopik\\Downloads\\selenium\\chromedriver_win32 (1)\\chromedriver.exe");
