@@ -57,7 +57,10 @@ public class TestNg extends Base {
 		}
 		if(browserName.equals("safari"))
 		{
-			 driver=OpenEdgeBrowser();
+			  driver=OpenChromeBrowser();
+			 driver=OpenChromeBrowser();
+			 driver=OpenChromeBrowser();
+			 driver=OpenChromeBrowser();
 			 
 		}
 		
