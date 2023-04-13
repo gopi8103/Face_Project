@@ -45,11 +45,13 @@ public class TestNgSignUp extends Base{
 			System.out.println("Before Test TestNgSignUp ");
 			if(browserName.equals("Chrome"))
 			{
-				driver=OpenChromeBrowser();
+				driver=OpenEdgeBrowser();
+				driver=OpenEdgeBrowser();
+				driver=OpenEdgeBrowser();
 			}
 			if(browserName.equals("Edge"))
 			{
-				driver=OpenEdgeBrowser();
+				driver=OpenChromeBrowser();
 				 
 			}
 			if(browserName.equals("Opera"))
