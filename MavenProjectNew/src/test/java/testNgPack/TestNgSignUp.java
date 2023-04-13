@@ -52,8 +52,13 @@ public class TestNgSignUp extends Base{
 				driver=OpenEdgeBrowser();
 				 
 			}
+			if(browserName.equals("Opera"))
+			{
+				System.setProperty("webdriver.opera.driver","C:\\Users\\gopik\\Downloads\\selenium\\operadriver_win32\\operadriver_win32\\operadriver.exe");
+				 driver=new OperaDriver();
+			}
 			
-			/*if(browserName.equals("Firefox"))
+			if(browserName.equals("Firefox"))
 			{
 				System.setProperty("webdriver.gecko.driver","C:\\Users\\gopik\\Downloads\\selenium\\geckodriver-v0.32.2-win32\\geckodriver.exe");
 				 driver=new FirefoxDriver();
@@ -62,9 +67,9 @@ public class TestNgSignUp extends Base{
 			{
 				System.setProperty("webdriver.opera.driver","C:\\Users\\gopik\\Downloads\\selenium\\operadriver_win32\\operadriver_win32\\operadriver.exe");
 				 driver=new OperaDriver();
-			}*/
-			driver.manage().window().maximize();
-			 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	
+			}
+		//	driver.manage().window().maximize();
+		//	 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	
 		}
 	@BeforeClass
 	public void CreatePOMObject() {
